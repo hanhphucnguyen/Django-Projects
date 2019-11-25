@@ -1,2 +1,2 @@
 # Django-Projects
-All my sample django projects
+*My sample django projects
