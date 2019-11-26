@@ -8,5 +8,10 @@
 </head>
 <body>
     <p>welcome to my page</p>
+    {% for t in myimages.all %}
+    <h3>{{t.name}}</h3>
+    <h6>{{t.description}}</h6>
+    <br>
+    {% endfor %}
 </body>
 </html>
