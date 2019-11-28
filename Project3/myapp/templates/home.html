@@ -11,7 +11,7 @@
     {% for i in images.all %}
     <p>{{i.name}}</p>
     <p>{{i.url}}</p>
-    <a href="{{url home}}"></a>
+    <a href="{% url 'home' %}"></a>
     {% endfor %}
 </body>
 </html>
