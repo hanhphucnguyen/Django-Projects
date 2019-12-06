@@ -6,8 +6,9 @@ class Image(models.Model):
     url = models.TextField(max_length=300)
     ima = models.ImageField(upload_to = 'hinh/',default = '')
 
-class
-
+class DataForGalery(models.Model):
+    img = models.ImageField(upload_to = 'hinh/',verbose_name="data image",default = '')
+  
 class Projects(models.Model):
     name = models.CharField(max_length=100,blank=True)
     desciption = models.TextField(max_length=500,blank=True)
