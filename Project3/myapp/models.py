@@ -16,3 +16,4 @@ class Projects(models.Model):
     desciption = models.TextField(max_length=500,blank=True)
     imageGalery = [models.ForeignKey(DataForGalery,on_delete=models.CASCADE)]
    
+   
