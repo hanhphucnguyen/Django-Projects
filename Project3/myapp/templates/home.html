@@ -8,10 +8,9 @@
 </head>
 <body>
     <p>hello world</p>
-    {% for i in images.all %}
+    {% for i in pro.arrayImage %}
     <p>{{i.name}}</p>
-    <p>{{i.url}}</p>
-    <a href="{% url 'home' %}">hehhe</a>
+    <br>
     {% endfor %}
 </body>
 </html>

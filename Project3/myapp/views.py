@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import Image
+from .models import Projects
 # Create your views here.
 def home(request):
-    images = Image.objects
-    return render(request,'home.html',{'images':images})
+    pro = Projects.objects.all()
+    return render(request,'home.html',{'pro':pro})
